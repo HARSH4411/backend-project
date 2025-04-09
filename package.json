@@ -1,18 +1,27 @@
 {
-  "name": "v7",
+  "name": "backend-project",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config src/index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "js",
+    "backend"
+  ],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "nodemon": "^3.1.9",
     "prettier": "^3.5.3"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2"
   }
 }
